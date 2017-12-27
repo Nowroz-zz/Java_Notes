@@ -5,12 +5,12 @@
 
 	```Java
 	public class ExceptionHandling {
-    		void toBeInvoked() throws Exception{
-        		System.out.println("I may contain exception");
-    		}
-    		void caller(){
-        		toBeInvoked();
-    		}
+		void toBeInvoked() throws Exception{
+			System.out.println("I may contain exception");
+		}
+		void caller(){
+			toBeInvoked();
+		}
 	}
 	```
 
@@ -21,15 +21,15 @@
 
 	```Java
 	public class ExceptionHandling {
-    		void toBeInvoked() throws Exception{
-        		System.out.println("I may contain exception");
-    		}
-    		void caller(){
-        		try{
-            			toBeInvoked();
-        		}catch(Exception e){
-            			System.out.println("Handling exception: "+e);
+		void toBeInvoked() throws Exception{
+			System.out.println("I may contain exception");
+		}
+		void caller(){
+			try{
+				toBeInvoked();
+			}catch(Exception e){
+				System.out.println("Handling exception: "+e);
 			}
-    		}
+		}
 	}
 	```
